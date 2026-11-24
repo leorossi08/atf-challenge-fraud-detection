@@ -1,0 +1,66 @@
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.metric-block {
+  min-width: 0;
+  padding: 18px 20px 16px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--electric);
+  border-radius: 10px;
+  background: var(--paper);
+  box-shadow: 0 2px 8px rgba(13, 22, 52, 0.04);
+}
+
+.metric-block.risk-metric {
+  border-top-color: var(--magenta);
+  background: linear-gradient(180deg, #ffffff 0%, #fff7fa 100%);
+}
+
+.metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.metric-top svg {
+  color: var(--electric);
+}
+
+.metric-block strong {
+  display: block;
+  margin: 8px 0 3px;
+  color: var(--navy);
+  font-size: 27px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.metric-block small {
+  display: block;
+  color: var(--muted);
+  font-size: 10.5px;
+}
+
+.metric-neutral,
+.metric-risk {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.metric-risk {
+  color: var(--magenta);
+  font-weight: 600;
+}
+
+.risk-metric .metric-top svg,
+.risk-metric strong {
+  color: var(--magenta);
+}

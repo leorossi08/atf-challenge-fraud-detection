@@ -1,0 +1,8 @@
+{
+  "fraud_value_median": 27.21,
+  "fraud_value_mean": 30.861886746399804,
+  "fraud_value_std": 16.61912651961611,
+  "sweetspot_low": 11.822000000000001,
+  "sweetspot_high": 62.37599999999999,
+  "high_value_safe_min": 100.0
+}

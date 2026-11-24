@@ -1,0 +1,59 @@
+# Local tooling
+.github/modernize/
+.claude/
+
+
+# Compiled class files
+*.class
+
+# Logs and crash reports
+*.log
+hs_err_pid*
+replay_pid*
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Java/Maven/Gradle build output
+target/
+build/
+out/
+dist/
+*.jar
+*.war
+*.nar
+*.ear
+*.tar.gz
+*.rar
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+*.iml
+
+# JavaScript/TypeScript dependencies and build caches
+node_modules/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Not published: trained pickles (they execute code on load), prediction dumps,
+# delivery bundles and the original case brief. See README "Data and models".
+*.joblib
+*.pkl
+*.npz
+*.zip
+data/*.pdf
+deliverables/Case_Fraude_Desenvolvimento.ipynb
+deliverables/figures/dash_screenshots/
+data/
